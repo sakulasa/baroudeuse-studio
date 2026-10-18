@@ -21,3 +21,10 @@
     width: 300px;
   }
 }
+
+/* Wider container for the cards section */
+.container-wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}

@@ -1,8 +1,10 @@
 .btn-blue {
   background-color: #6D71DD;
-  padding: 15px 20px;
+  padding: 15px 22px;
   border-radius: 4px;
   color: white;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
 }

@@ -9,34 +9,53 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(60,40,30,0.12);
   border-radius: 6px;
   margin: 10px;
-  flex-basis: 250px;
+  flex-basis: 400px;
   flex-grow: 1;
   max-width: calc(50% - 60px); /* keeps every card the same size */
 }
 
 .card img {
-  width: 120px;
-  height: 180px;
+  width: 160px;
+  height: 240px;
   object-fit: cover; /* same 2:3 frame for every photo */
   border-radius: 6px;
 }
 
 .card-infos {
   flex-grow: 1;
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 1px;
   margin: 0px 0px 10px 0px;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #8a8a8a;
+  color: #8b847e;
   margin: 0px 0px 6px 0px;
+}
+
+/* On smaller screens: one card per row */
+@media (max-width: 960px) {
+  .card {
+    max-width: calc(100% - 60px);
+  }
+}
+@media (max-width: 540px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-infos {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
 }
